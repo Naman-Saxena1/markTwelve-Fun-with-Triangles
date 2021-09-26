@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <nav id="navbar">
+            <a href="./isTriangle.html">Is Triangle?</a>
+            <a href="./quiz.html">Quiz</a>
+            <a href="./hypotenuse.html">Hypotenuse</a>
+            <a href="./areaOfTriangle.html">Area</a>
+        </nav>
+        <h1>Triangle Quiz</h1>
+        <form id="quiz-form">
+            <div class="question">
+                <p id="question1">What is the 3rd angle of the Triangle with Angle1 =100° and Angle2 =40°?</p>
+                <label>
+                    <input type="radio" name="question1option" value="85°"/>
+                    85°
+                </label>
+                <label>
+                    <input type="radio" name="question1option" value="40°"/>
+                    40°
+                </label>
+                <label>
+                    <input type="radio" name="question1option" value="69°"/>
+                    69°
+                </label>
+            </div>
+            <div class="question">
+                <p id="question2">Which of the following triangles have the same side lengths?</p>
+                <label>
+                    <input type="radio" name="question2option" value="Scalene"/>
+                    Scalene
+                </label>
+                <label>
+                    <input type="radio" name="question2option" value="Isosceles"/>
+                    Isosceles
+                </label>
+                <label>
+                    <input type="radio" name="question2option" value="Equilateral"/>
+                    Equilateral
+                </label>
+            </div>
+            <div class="question">
+                <p id="question3">What is the length of the 3rd side of a triangle if perimeter of a triangle is 95 cm and the length of two sides are 30 cm and 30 cm?</p>
+                <label>
+                    <input type="radio" name="question3option" value="50 cm"/>
+                    50 cm
+                </label>
+                <label>
+                    <input type="radio" name="question3option" value="28 cm"/>
+                    28 cm
+                </label>
+                <label>
+                    <input type="radio" name="question3option" value="35 cm"/>
+                    35 cm
+                </label>
+            </div>
+        </form>
+        <button id="submit-answers-btn">Submit Answers</button>
+        <div id="score"></div>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>
