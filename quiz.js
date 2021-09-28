@@ -8,16 +8,23 @@ function submitButtonClickHandler()
 {
     let score=0;
     let index=0;
-    let formResults = new FormData(quizform)
-    for(let value of formResults.values())
+    if((document.querySelector('input[type=radio]:checked'))!=null)
     {
-        if(value==correctAns[index])
+        let formResults = new FormData(quizform)
+        for(let value of formResults.values())
         {
-            ++score
+            if(value==correctAns[index])
+            {
+                ++score
+            }
+            ++index
         }
-        ++index
+        quizScore.innerText=`Your score : ${score}/3`
     }
-    quizScore.innerText=`Your score : ${score}/3`
+    else
+    {
+        quizScore.innerText=`Please answer atleast 1 question`
+    }
 }
 
 submitAnswersBtn.addEventListener("click",submitButtonClickHandler)
